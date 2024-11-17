@@ -24,7 +24,52 @@ body {
     background-color: #1787ff; /* Cor ao passar o mouse */
 }
 
+.conteiner {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1000; /* Garante que está acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    backdrop-filter: blur(10px);
+}
 
 
+/* Conteúdo do modal */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid rgba(136, 136, 136, 0);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(60px);
+}
 
+/* Botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Estilo das fotos */
+.fotos img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
