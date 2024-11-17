@@ -36,3 +36,27 @@ setInterval(function () {
     document.getElementById('resultado').innerText = `Há ${diasExatos} dias, ${horasExatas-4} horas, ${minutosExatos} minutos e ${segundosExatos} segundos com você.`;
 
 },1000)
+
+
+// Seleciona os elementos do modal
+const modal = document.getElementById('modal-fotos');
+const btn = document.querySelector('.button-fotos-do-mes');
+const span = document.querySelector('.close');
+
+// Abre o modal ao clicar no botão
+btn.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+
+// Fecha o modal ao clicar no "x"
+span.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Fecha o modal ao clicar fora da área de conteúdo
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
