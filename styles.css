@@ -47,8 +47,8 @@ body {
 /* Conteúdo do modal */
 .modal-content {
     background-color: rgba(255, 255, 255, 0);
-    margin: 10% auto;
-    padding: 20px;
+    margin: 5% auto;
+    padding: 10px 5%;
     border: 1px solid rgba(136, 136, 136, 0);
     width: 50%;
     text-align: center;
